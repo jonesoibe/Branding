@@ -1,89 +1,302 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Favour Oibe-Jones</title>
+  <meta name="description" content="Favour Oibe-Jones is an EFT / Application Support Engineer at First Bank of Nigeria, keeping Postilion payment infrastructure fast, secure and always on.">
+  <meta property="og:title" content="Favour Oibe-Jones — EFT & Payments Engineer">
+  <meta property="og:description" content="Keeping Nigeria's card payments fast, secure and always on.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/13.1.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/13.1.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/13.1.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <header class="topbar">
+    <a class="topbar__name" href="#top">Favour Oibe-Jones</a>
+    <nav class="topbar__nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#story">Story</a>
+      <a href="#toolbox">Toolbox</a>
+      <a href="https://www.linkedin.com/in/favour-oibejones/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:jonesoibe@gmail.com">Email ↗</a>
+    </nav>
+  </header>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  <main id="top">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <p class="hero__kicker">EFT &amp; Payments Engineer · Lagos, Nigeria</p>
+      <figure class="hero__portrait">
+        <img src="assets/favour-hero.webp" width="1000" height="1333" alt="Portrait of Favour Oibe-Jones in a purple shirt with headphones around his neck">
+      </figure>
+      <h1 class="hero__name" aria-label="Favour Oibe-Jones">
+        <span class="hero__line hero__line--1" aria-hidden="true">Favour</span>
+        <span class="hero__line hero__line--2" aria-hidden="true">Oibe-Jones</span>
+      </h1>
+      <div class="hero__foot">
+        <p class="hero__tag">A story for people who<br>care about money moving<br>without a hiccup.</p>
+        <a class="hero__cue" href="#about">Scroll to begin <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <p class="label">About</p>
+      <p class="about__lede">
+        I keep payment systems <em>alive</em>. Every card tap, transfer and withdrawal passes through a
+        front-end processor, and I'm the engineer who makes sure it keeps answering.
+      </p>
+      <div class="about__split">
+        <figure class="about__photo">
+          <img src="assets/favour-about.webp" width="1000" height="1333" loading="lazy" alt="Favour Oibe-Jones smiling slightly in a purple shirt">
+        </figure>
+        <div class="about__cols">
+          <p>
+            I'm a results-oriented technical support specialist with deep experience in Electronic Funds Transfer
+            (EFT) ecosystems and Postilion FEP administration. I ensure high availability of payment infrastructure
+            through proactive monitoring and rigorous Tier 2 support.
+          </p>
+          <p>
+            I manage integrations with the major payment schemes (Visa, MasterCard, Verve), drive PCI-DSS compliance,
+            and automate workflows with SQL and PowerShell. I work across teams to roll out new card products and
+            squeeze more performance out of transaction processing.
+          </p>
+          <a class="textlink" href="mailto:jonesoibe@gmail.com">jonesoibe@gmail.com ↗</a>
+        </div>
+      </div>
+
+      <dl class="stats">
+        <div><dt>99.99%</dt><dd>uptime on Postilion applications</dd></div>
+        <div><dt>70%+</dt><dd>fewer system failures</dd></div>
+        <div><dt>24/7</dt><dd>on-call production support</dd></div>
+        <div><dt>4 yrs</dt><dd>at First Bank of Nigeria</dd></div>
+      </dl>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="story" id="story" aria-label="Career story">
+      <div class="story__stage">
+
+        <div class="ruler" aria-hidden="true">
+          <div class="ruler__ticks"></div>
+          <div class="ruler__marker"><span class="ruler__year">2014</span></div>
+        </div>
+
+        <div class="story__track">
+
+          <article class="chapter chapter--intro" data-year="2014">
+            <p class="label">The story</p>
+            <h2>Twelve years,<br><em>one thread.</em></h2>
+            <p>From circuits and sensors to the switches that move a nation's money. Scroll sideways through the chapters.</p>
+            <p class="chapter__hint">Keep scrolling →</p>
+          </article>
+
+          <article class="chapter" data-year="2016.5">
+            <p class="chapter__years">2014 — 2019</p>
+            <h2>Learning how <em>things work</em></h2>
+            <p class="chapter__role">B.Eng, Electrical &amp; Electronics Engineering</p>
+            <p class="chapter__org">University of Agriculture, Makurdi</p>
+            <p>
+              Five years of engineering fundamentals, capped by a thesis: an intelligent home automation system
+              built on GSM and PIR sensors. It was my first taste of connecting devices, events and alerts into
+              something that responds on its own.
+            </p>
+            <figure class="chapter__quote">
+              <blockquote>Designed and implemented an intelligent home automation system using GSM and PIR sensors.</blockquote>
+              <figcaption>Final-year thesis</figcaption>
+            </figure>
+          </article>
+
+          <article class="chapter" data-year="2022.9">
+            <p class="chapter__years">Oct 2022 — Jan 2023</p>
+            <h2>Leading <em>the line</em></h2>
+            <p class="chapter__role">Team Lead, Non-Financial Transactions</p>
+            <p class="chapter__org">First Bank of Nigeria · Birnin Kebbi, Kebbi State</p>
+            <p>
+              My first role at First Bank: on-site in Birnin Kebbi, leading a team on the non-financial
+              transactions side of the business.
+            </p>
+          </article>
+
+          <article class="chapter" data-year="2023.2">
+            <p class="chapter__years">Feb — Apr 2023</p>
+            <h2>Back to <em>school</em></h2>
+            <p class="chapter__role">Graduate Trainee</p>
+            <p class="chapter__org">First Academy Foundation School · Lagos</p>
+            <p>
+              Three months of structured graduate training in Lagos, right before moving into EFT and
+              application support.
+            </p>
+          </article>
+
+          <article class="chapter chapter--wide" data-year="2024.8">
+            <p class="chapter__years">May 2023 — Present</p>
+            <h2>Keeping the <em>switch</em> awake</h2>
+            <p class="chapter__role">EFT / Application Support Engineer &amp; Support Analyst</p>
+            <p class="chapter__org">First Bank of Nigeria · Lagos · Hybrid</p>
+            <p class="chapter__lead">
+              I ensure 99.99% uptime for Postilion applications, cutting system failures by over 70%, across card
+              transaction switching and routing, anti-fraud integration and third-party interfaces.
+            </p>
+
+            <div class="duties">
+              <section>
+                <h3><span>01</span> Support</h3>
+                <ul>
+                  <li>Tier 2 support for EFT systems, resolving FEP incidents within agreed SLAs</li>
+                  <li>24/7 on-call rotation and after-hours troubleshooting</li>
+                  <li>Core configuration, parameterization and deployment of approved changes</li>
+                  <li>Critical incidents on card transactions, authorizations and settlement discrepancies</li>
+                </ul>
+              </section>
+              <section>
+                <h3><span>02</span> Monitoring</h3>
+                <ul>
+                  <li>Monitoring landscapes in Dynatrace, ManageEngine and Grafana</li>
+                  <li>Transaction-flow watching to catch anomalies before they become downtime</li>
+                  <li>Daily trend reports and posting validation for financial accuracy</li>
+                  <li>Root cause analysis for major incidents, plus the SOPs that follow</li>
+                </ul>
+              </section>
+              <section>
+                <h3><span>03</span> Integration</h3>
+                <ul>
+                  <li>Integrations with core banking and payment networks: Visa, MasterCard, Verve, UPSL</li>
+                  <li>Rolling out new card products and features with cross-functional teams</li>
+                  <li>PowerShell automation, plus UAT / SIT testing for new deployments</li>
+                  <li>Postilion Postcard and real-time application support</li>
+                </ul>
+              </section>
+              <section>
+                <h3><span>04</span> Security</h3>
+                <ul>
+                  <li>PCI-DSS, ISO standards and card scheme compliance, including 3DS for CNP transactions</li>
+                  <li>HSM operations and encryption key management</li>
+                  <li>Threat mitigation, audits and capacity planning with cybersecurity teams</li>
+                  <li>Technical documentation so stakeholders get the most from Postilion</li>
+                </ul>
+              </section>
+            </div>
+          </article>
+
+          <article class="chapter chapter--photo" data-year="2025.4">
+            <figure>
+              <img src="assets/favour-story.webp" width="900" height="1200" loading="lazy" alt="Favour Oibe-Jones standing outdoors beside a pool and apartment towers">
+              <figcaption class="label">Off the clock</figcaption>
+            </figure>
+          </article>
+
+          <article class="chapter" data-year="2026">
+            <p class="chapter__years">Aug 2025 — Sep 2026</p>
+            <h2>Still <em>learning</em></h2>
+            <p class="chapter__role">Master's Degree, Information Technology</p>
+            <p class="chapter__org">Miva Open University</p>
+            <p>
+              A Master's in Information Technology, studied alongside a full-time, on-call role. Software
+              development sits at the core of it.
+            </p>
+            <p class="chapter__grade"><strong>4.72</strong> grade</p>
+          </article>
+
+          <article class="chapter chapter--outro" data-year="2026.8">
+            <p class="label">Now</p>
+            <h2>The next<br><em>chapter?</em></h2>
+            <p>If you're building, scaling or securing payment infrastructure, I'd like to hear about it.</p>
+            <a class="btn" href="#contact">Let's talk ↓</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLBOX -->
+    <section class="toolbox" id="toolbox">
+      <p class="label">Toolbox</p>
+      <h2 class="toolbox__title">What I reach for <em>every day</em></h2>
+      <div class="toolbox__grid">
+        <div>
+          <h3>Payments</h3>
+          <ul>
+            <li>Postilion FEP</li>
+            <li>Postcard &amp; real-time</li>
+            <li>Visa · MasterCard · Verve · UPSL</li>
+            <li>3DS for CNP</li>
+            <li>Anti-fraud drivers</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Monitoring</h3>
+          <ul>
+            <li>Dynatrace</li>
+            <li>ManageEngine</li>
+            <li>Grafana</li>
+            <li>Dashboards, alerts &amp; logs</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data &amp; Code</h3>
+          <ul>
+            <li>SQL · Oracle · MS SQL · MySQL</li>
+            <li>PowerShell</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Infrastructure</h3>
+          <ul>
+            <li>Windows &amp; Linux administration</li>
+            <li>IIS</li>
+            <li>HSM &amp; key management</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Compliance</h3>
+          <ul>
+            <li>PCI-DSS</li>
+            <li>ISO standards</li>
+            <li>Card scheme requirements</li>
+            <li>RCA &amp; SOPs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="label">Say hello</p>
+      <div class="contact__grid">
+        <div>
+          <h2 class="contact__title">Got a payments<br>problem <em>worth solving?</em></h2>
+          <div class="contact__actions">
+            <a class="contact__link contact__link--primary" href="mailto:jonesoibe@gmail.com">
+              Email me <span aria-hidden="true">↗</span>
+            </a>
+            <a class="contact__link" href="https://www.linkedin.com/in/favour-oibejones/" target="_blank" rel="noopener">
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="contact__mailrow">
+            <span class="contact__mail">jonesoibe@gmail.com</span>
+            <button class="contact__copy" id="copy-email" type="button">Copy email</button>
+          </div>
+        </div>
+        <figure class="contact__photo">
+          <img src="assets/favour-contact.webp" width="1000" height="1333" loading="lazy" alt="Close portrait of Favour Oibe-Jones">
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Favour Oibe-Jones · Lagos, Nigeria</span>
+    <a href="#top">Back to the beginning ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
